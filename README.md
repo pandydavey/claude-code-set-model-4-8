@@ -2,7 +2,7 @@
 
 Currently you cant set claude code to 4.8 without knowing the key.
 
-A tiny [Claude Code](https://claude.com/claude-code) skill to pin your default model to **Opus 4.8** or **Sonnet 4.8**.
+A tiny [Claude Code](https://claude.com/claude-code) skill to pin your default model to **Opus 4.8** or **Sonnet 4.6**.
 
 The `/model` picker only lists the model versions shipped with your Claude Code build, so newer/older ids like `claude-opus-4-8` may not appear. This skill just edits the `model` key in your `settings.json` for you.
 
@@ -12,9 +12,9 @@ Copy the skill into your Claude Code skills directory:
 
 ```bash
 # Global (all projects)
-mkdir -p ~/.claude/skills/set-model
-curl -o ~/.claude/skills/set-model/SKILL.md \
-  https://raw.githubusercontent.com/<you>/set-model/main/SKILL.md
+mkdir -p ~/.claude/skills/set-model-4-8
+curl -o ~/.claude/skills/set-model-4-8/SKILL.md \
+  https://raw.githubusercontent.com/pandydavey/set-model-4-8/SKILL.md
 ```
 
 Or drop SKILL.md under .claude/skills/set-model/ in a specific repo for a project-scoped install.
@@ -24,7 +24,7 @@ Usage
 In Claude Code:
 
 /set-model opus 4.8
-/set-model sonnet 4.8
+/set-model sonnet 4.6
 
 Or just ask: "switch to opus 4.8".
 
@@ -35,7 +35,7 @@ Model ids
 ├────────────┼───────────────────┤
 │ Opus 4.8   │ claude-opus-4-8   │
 ├────────────┼───────────────────┤
-│ Sonnet 4.8 │ claude-sonnet-4-8 │
+│ Sonnet 4.6 │ claude-sonnet-4-6 │
 └────────────┴───────────────────┘
 
 Set it manually
