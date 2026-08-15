@@ -14,7 +14,7 @@ Copy the skill into your Claude Code skills directory:
 # Global (all projects)
 mkdir -p ~/.claude/skills/set-model-4-8
 curl -o ~/.claude/skills/set-model-4-8/SKILL.md \
-  https://raw.githubusercontent.com/pandydavey/set-model-4-8/SKILL.md
+  https://raw.githubusercontent.com/pandydavey/claude-code-set-model-4-8/refs/heads/main/set-model-4-8/SKILL.md
 ```
 
 Or drop SKILL.md under .claude/skills/set-model/ in a specific repo for a project-scoped install.
